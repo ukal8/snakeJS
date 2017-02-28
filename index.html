@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--open graph meta-->
+  <meta property="og:title" content="Snake Game JS"/>
+  <meta property="og:type" content="game"/>
+  <meta property="og:url" content="http://kalinets.online/snake"/>
+  <meta property="og:image" content="http://thestreamingadvisor.com/wp-content/uploads/2015/08/Roku-Channel-Reviews-Snake.jpg"/>
+  <meta property="og:description" content="Snake JS sample"/>
+  <!--twitter card-->
+  <meta name="twitter:card" content="card_type"/>
+  <meta name="twitter:title" content="Snake Game JS"/>
+  <meta name="twitter:description" content="Snake JS sample"/>
+  <meta name="twitter:image:src" content="http://thestreamingadvisor.com/wp-content/uploads/2015/08/Roku-Channel-Reviews-Snake.jpg"/>
+  <meta name="twitter:creator" content="@stok_man"/>
+  <!---->
+  <title>Snake JS sample</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    canvas {
+      display: block;
+    }
+    #game-over {
+      display: none;
+      position: absolute;
+      top: 30px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+    p {
+      margin: 10px;
+    }
+    #restart {
+      -webkit-appearance: none;
+      padding: 5px 10px;
+      border: 1px solid black;
+      border-radius: 3px;
+      outline: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    #restart:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="game"></canvas>
+  <section id="game-over">
+    <h1>GAME OVER</h1>
+    <p>Your score is <span id="score"></span>.</p>
+    <button id="restart">restart?</button>
+  </section>
+  <script src="scripts.js"></script>
+</body>
+</html>
